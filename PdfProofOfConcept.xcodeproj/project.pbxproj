@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005749E213584B3500D40E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E113584B3500D40E12 /* UIKit.framework */; };
+		005749E413584B3500D40E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E313584B3500D40E12 /* Foundation.framework */; };
+		005749E613584B3500D40E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E513584B3500D40E12 /* CoreGraphics.framework */; };
+		005749EC13584B3500D40E12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005749EA13584B3500D40E12 /* InfoPlist.strings */; };
+		005749EF13584B3500D40E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 005749EE13584B3500D40E12 /* main.m */; };
+		005749F213584B3500D40E12 /* PdfProofOfConceptAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 005749F113584B3500D40E12 /* PdfProofOfConceptAppDelegate.m */; };
+		005749F513584B3500D40E12 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005749F313584B3500D40E12 /* MainWindow.xib */; };
+		005749F813584B3500D40E12 /* PdfProofOfConceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */; };
+		005749FB13584B3500D40E12 /* PdfProofOfConceptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005749F913584B3500D40E12 /* PdfProofOfConceptViewController.xib */; };
+		00574A0413584C9500D40E12 /* PdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00574A0313584C9500D40E12 /* PdfView.m */; };
+		00574A071358503F00D40E12 /* dontjustrollthedice.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00574A061358503E00D40E12 /* dontjustrollthedice.pdf */; };
+		00574A091358506A00D40E12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00574A081358506A00D40E12 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		005749DD13584B3500D40E12 /* PdfProofOfConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfProofOfConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		005749E113584B3500D40E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		005749E313584B3500D40E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		005749E513584B3500D40E12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		005749E913584B3500D40E12 /* PdfProofOfConcept-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PdfProofOfConcept-Info.plist"; sourceTree = "<group>"; };
+		005749EB13584B3500D40E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		005749ED13584B3500D40E12 /* PdfProofOfConcept-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PdfProofOfConcept-Prefix.pch"; sourceTree = "<group>"; };
+		005749EE13584B3500D40E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		005749F013584B3500D40E12 /* PdfProofOfConceptAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdfProofOfConceptAppDelegate.h; sourceTree = "<group>"; };
+		005749F113584B3500D40E12 /* PdfProofOfConceptAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfProofOfConceptAppDelegate.m; sourceTree = "<group>"; };
+		005749F413584B3500D40E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		005749F613584B3500D40E12 /* PdfProofOfConceptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdfProofOfConceptViewController.h; sourceTree = "<group>"; };
+		005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfProofOfConceptViewController.m; sourceTree = "<group>"; };
+		005749FA13584B3500D40E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PdfProofOfConceptViewController.xib; sourceTree = "<group>"; };
+		00574A0213584C9500D40E12 /* PdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfView.h; sourceTree = "<group>"; };
+		00574A0313584C9500D40E12 /* PdfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfView.m; sourceTree = "<group>"; };
+		00574A061358503E00D40E12 /* dontjustrollthedice.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dontjustrollthedice.pdf; sourceTree = "<group>"; };
+		00574A081358506A00D40E12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		005749DA13584B3500D40E12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00574A091358506A00D40E12 /* QuartzCore.framework in Frameworks */,
+				005749E213584B3500D40E12 /* UIKit.framework in Frameworks */,
+				005749E413584B3500D40E12 /* Foundation.framework in Frameworks */,
+				005749E613584B3500D40E12 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005749D213584B3500D40E12 = {
+			isa = PBXGroup;
+			children = (
+				005749E713584B3500D40E12 /* PdfProofOfConcept */,
+				005749E013584B3500D40E12 /* Frameworks */,
+				005749DE13584B3500D40E12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		005749DE13584B3500D40E12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				005749DD13584B3500D40E12 /* PdfProofOfConcept.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		005749E013584B3500D40E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00574A081358506A00D40E12 /* QuartzCore.framework */,
+				005749E113584B3500D40E12 /* UIKit.framework */,
+				005749E313584B3500D40E12 /* Foundation.framework */,
+				005749E513584B3500D40E12 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		005749E713584B3500D40E12 /* PdfProofOfConcept */ = {
+			isa = PBXGroup;
+			children = (
+				00574A0513584CA400D40E12 /* Custom View */,
+				005749F013584B3500D40E12 /* PdfProofOfConceptAppDelegate.h */,
+				005749F113584B3500D40E12 /* PdfProofOfConceptAppDelegate.m */,
+				005749F613584B3500D40E12 /* PdfProofOfConceptViewController.h */,
+				005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */,
+				00574A0113584B5A00D40E12 /* Resoursces */,
+				00574A061358503E00D40E12 /* dontjustrollthedice.pdf */,
+				005749E813584B3500D40E12 /* Supporting Files */,
+			);
+			path = PdfProofOfConcept;
+			sourceTree = "<group>";
+		};
+		005749E813584B3500D40E12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				005749E913584B3500D40E12 /* PdfProofOfConcept-Info.plist */,
+				005749EA13584B3500D40E12 /* InfoPlist.strings */,
+				005749ED13584B3500D40E12 /* PdfProofOfConcept-Prefix.pch */,
+				005749EE13584B3500D40E12 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00574A0113584B5A00D40E12 /* Resoursces */ = {
+			isa = PBXGroup;
+			children = (
+				005749F313584B3500D40E12 /* MainWindow.xib */,
+				005749F913584B3500D40E12 /* PdfProofOfConceptViewController.xib */,
+			);
+			name = Resoursces;
+			sourceTree = "<group>";
+		};
+		00574A0513584CA400D40E12 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				00574A0213584C9500D40E12 /* PdfView.h */,
+				00574A0313584C9500D40E12 /* PdfView.m */,
+			);
+			name = "Custom View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		005749DC13584B3500D40E12 /* PdfProofOfConcept */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005749FE13584B3500D40E12 /* Build configuration list for PBXNativeTarget "PdfProofOfConcept" */;
+			buildPhases = (
+				005749D913584B3500D40E12 /* Sources */,
+				005749DA13584B3500D40E12 /* Frameworks */,
+				005749DB13584B3500D40E12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PdfProofOfConcept;
+			productName = PdfProofOfConcept;
+			productReference = 005749DD13584B3500D40E12 /* PdfProofOfConcept.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		005749D413584B3500D40E12 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 005749D713584B3500D40E12 /* Build configuration list for PBXProject "PdfProofOfConcept" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 005749D213584B3500D40E12;
+			productRefGroup = 005749DE13584B3500D40E12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				005749DC13584B3500D40E12 /* PdfProofOfConcept */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		005749DB13584B3500D40E12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005749EC13584B3500D40E12 /* InfoPlist.strings in Resources */,
+				005749F513584B3500D40E12 /* MainWindow.xib in Resources */,
+				005749FB13584B3500D40E12 /* PdfProofOfConceptViewController.xib in Resources */,
+				00574A071358503F00D40E12 /* dontjustrollthedice.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		005749D913584B3500D40E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005749EF13584B3500D40E12 /* main.m in Sources */,
+				005749F213584B3500D40E12 /* PdfProofOfConceptAppDelegate.m in Sources */,
+				005749F813584B3500D40E12 /* PdfProofOfConceptViewController.m in Sources */,
+				00574A0413584C9500D40E12 /* PdfView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		005749EA13584B3500D40E12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005749EB13584B3500D40E12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		005749F313584B3500D40E12 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005749F413584B3500D40E12 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		005749F913584B3500D40E12 /* PdfProofOfConceptViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005749FA13584B3500D40E12 /* en */,
+			);
+			name = PdfProofOfConceptViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		005749FC13584B3500D40E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		005749FD13584B3500D40E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		005749FF13584B3500D40E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfProofOfConcept/PdfProofOfConcept-Prefix.pch";
+				INFOPLIST_FILE = "PdfProofOfConcept/PdfProofOfConcept-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00574A0013584B3500D40E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfProofOfConcept/PdfProofOfConcept-Prefix.pch";
+				INFOPLIST_FILE = "PdfProofOfConcept/PdfProofOfConcept-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005749D713584B3500D40E12 /* Build configuration list for PBXProject "PdfProofOfConcept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005749FC13584B3500D40E12 /* Debug */,
+				005749FD13584B3500D40E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005749FE13584B3500D40E12 /* Build configuration list for PBXNativeTarget "PdfProofOfConcept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005749FF13584B3500D40E12 /* Debug */,
+				00574A0013584B3500D40E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 005749D413584B3500D40E12 /* Project object */;
+}
