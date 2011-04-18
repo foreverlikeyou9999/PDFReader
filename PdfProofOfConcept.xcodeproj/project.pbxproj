@@ -88,14 +88,10 @@
 		005749E713584B3500D40E12 /* PdfProofOfConcept */ = {
 			isa = PBXGroup;
 			children = (
+				00670CD9135C7CAA008B52A3 /* View Controller */,
 				00574A0513584CA400D40E12 /* Custom View */,
-				005749F013584B3500D40E12 /* PdfProofOfConceptAppDelegate.h */,
-				005749F113584B3500D40E12 /* PdfProofOfConceptAppDelegate.m */,
-				005749F613584B3500D40E12 /* PdfProofOfConceptViewController.h */,
-				005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */,
-				00574A0113584B5A00D40E12 /* Resoursces */,
-				00574A061358503E00D40E12 /* dontjustrollthedice.pdf */,
 				005749E813584B3500D40E12 /* Supporting Files */,
+				00574A0113584B5A00D40E12 /* Resoursces */,
 			);
 			path = PdfProofOfConcept;
 			sourceTree = "<group>";
@@ -103,6 +99,8 @@
 		005749E813584B3500D40E12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				005749F013584B3500D40E12 /* PdfProofOfConceptAppDelegate.h */,
+				005749F113584B3500D40E12 /* PdfProofOfConceptAppDelegate.m */,
 				005749E913584B3500D40E12 /* PdfProofOfConcept-Info.plist */,
 				005749EA13584B3500D40E12 /* InfoPlist.strings */,
 				005749ED13584B3500D40E12 /* PdfProofOfConcept-Prefix.pch */,
@@ -114,6 +112,7 @@
 		00574A0113584B5A00D40E12 /* Resoursces */ = {
 			isa = PBXGroup;
 			children = (
+				00574A061358503E00D40E12 /* dontjustrollthedice.pdf */,
 				005749F313584B3500D40E12 /* MainWindow.xib */,
 				005749F913584B3500D40E12 /* PdfProofOfConceptViewController.xib */,
 			);
@@ -127,6 +126,15 @@
 				00574A0313584C9500D40E12 /* PdfView.m */,
 			);
 			name = "Custom View";
+			sourceTree = "<group>";
+		};
+		00670CD9135C7CAA008B52A3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				005749F613584B3500D40E12 /* PdfProofOfConceptViewController.h */,
+				005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +314,7 @@
 				00574A0013584B3500D40E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

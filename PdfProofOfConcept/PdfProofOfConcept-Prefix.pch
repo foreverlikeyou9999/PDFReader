@@ -12,3 +12,21 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 #endif
+
+//IMPORTANT: under Project Settings on the Build tab for Debug configuration, add "-DDEBUG" under "Other C Flags" (in the "GCC 4.2 - Language" section).
+
+
+#import "PdfProofOfConceptAppDelegate.h"
+
+#if !defined( DEBUG_LOG ) && defined( DEBUG )
+#define DEBUG_LOGF( msg, args... )    (NSLog( msg, args ))
+#define DEBUG_LOG( msg )            (NSLog( msg ))
+#define DEBUG_POSITION                NSLog( @"-> %@ - %@", NSStringFromClass( [self class] ), NSStringFromSelector(_cmd) )
+#elif !defined( DEBUG_LOG ) && !defined( DEBUG )
+#define DEBUG_LOGF( msg, args... )
+#define DEBUG_LOG( msg )
+#define DEBUG_POSITION
+#endif
+
+// macros
+#define APP ((PdfProofOfConceptAppDelegate*)[[UIApplication sharedApplication] delegate])
