@@ -11,10 +11,12 @@
 @implementation PdfProofOfConceptViewController
 @synthesize viewWithPdf;
 @synthesize currentPage;
+@synthesize addPageButton;
 
 - (void)dealloc
 {
-    [viewWithPdf release];
+    [addPageButton release];
+	[viewWithPdf release];
 	[super dealloc];
 }
 
@@ -25,10 +27,10 @@
 	[super viewDidLoad];
 	viewWithPdf.delegate = self;
 	currentPage = 1;
-	for (int i = 5; i < 8; i++)
-	{
-		[viewWithPdf creatPdfPage:i withPdfFile:@"dontjustrollthedice" delegate:self]; // show
-	}
+	// add number of pages
+	[viewWithPdf creatPdfPage:currentPage withPdfFile:@"dontjustrollthedice" delegate:self]; // show
+	//[viewWithPdf loadPdfPageNumberToArray:i withPdfFile:@"dontjustrollthedice" delegate:self];
+
 	
 }
 
@@ -36,6 +38,17 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+	
+}
+
+- (IBAction)addPageButton:(id)sender
+{
+	[viewWithPdf creatPdfPage:++currentPage withPdfFile:@"dontjustrollthedice" delegate:self]; // show
+	
 }
 
 #pragma mark PdfProofOfConceptDelegate 

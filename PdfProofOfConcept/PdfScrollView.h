@@ -29,14 +29,19 @@ method
 	CGFloat maxContentWidth; // max widrh of the scroll view
 	NSInteger pdfPagesSpacing; // TODO - if pdfPagesSpacing>0 then layout is not right, the pages moves to right
 	NSInteger queuePagesToLoadConcurrently; // NSOperationQueue parameter - number of NSOperation processing concurrently. If queuePagesToLoadConcurrently > 1 then the pages could be added in different sequence.
+	NSArray* arrayOfPdfViews; // array wich have all the loaded pdf pages;
+	NSInteger numberOfPdfPageToLoad; // number of the Pdf pages loaded to scroll view
 }
 
+@property (nonatomic, retain) NSArray* arrayOfPdfViews; // array wich have all the loaded pdf pages;
 @property (nonatomic, readwrite) CGFloat maxContentWidth; // max widrh of the scroll view
 @property (nonatomic, readwrite) NSInteger pdfPagesSpacing;
 @property (nonatomic, readwrite) NSInteger queuePagesToLoadConcurrently;
+@property (nonatomic, readwrite) NSInteger numberOfPdfPageToLoad; // number of the Pdf pages loaded to scroll view
 
 -(void)creatPdfPage:(NSInteger)pageNumber withPdfFile:(NSString*)fileName delegate:(UIViewController<PdfProofOfConceptDelegate>*)delegate;
 // init operation queue
 -(void) initOperationQueue;
+-(void)loadPdfPageNumberToArray:(PdfView*)pdfView;
 
 @end

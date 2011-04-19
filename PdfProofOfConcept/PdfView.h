@@ -15,7 +15,7 @@
 	NSString* pdfFileName; // name of the pdf file, no extension
 }
 
-@property (nonatomic, readonly) NSInteger pageToDraw; // number of page to draw
+@property (nonatomic, readwrite) NSInteger pageToDraw; // number of page to draw
 @property (nonatomic, retain) NSString* pdfFileName; // name of the pdf file, no extension
 
 - (id)initWithFrame:(CGRect)frame withPdfFile:(NSString*) fileName withPdfPage:(NSInteger) pageNumber;
