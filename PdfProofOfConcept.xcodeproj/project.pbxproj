@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00311941135D9C1D005064C4 /* PdfScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00311940135D9C1D005064C4 /* PdfScrollView.m */; };
 		005749E213584B3500D40E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E113584B3500D40E12 /* UIKit.framework */; };
 		005749E413584B3500D40E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E313584B3500D40E12 /* Foundation.framework */; };
 		005749E613584B3500D40E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005749E513584B3500D40E12 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0031193F135D9C1D005064C4 /* PdfScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfScrollView.h; sourceTree = "<group>"; };
+		00311940135D9C1D005064C4 /* PdfScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfScrollView.m; sourceTree = "<group>"; };
 		005749DD13584B3500D40E12 /* PdfProofOfConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfProofOfConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005749E113584B3500D40E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		005749E313584B3500D40E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 			children = (
 				005749F613584B3500D40E12 /* PdfProofOfConceptViewController.h */,
 				005749F713584B3500D40E12 /* PdfProofOfConceptViewController.m */,
+				0031193F135D9C1D005064C4 /* PdfScrollView.h */,
+				00311940135D9C1D005064C4 /* PdfScrollView.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				005749F213584B3500D40E12 /* PdfProofOfConceptAppDelegate.m in Sources */,
 				005749F813584B3500D40E12 /* PdfProofOfConceptViewController.m in Sources */,
 				00574A0413584C9500D40E12 /* PdfView.m in Sources */,
+				00311941135D9C1D005064C4 /* PdfScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -90,6 +90,7 @@ void MyDisplayPDFPage (CGContextRef myContext, size_t pageNumber, CFURLRef theUR
         
         CGContextDrawPDFPage(ctx, page); // draw Pdf Page   
         CGContextRestoreGState(ctx);
+		CGPDFPageRelease(page);
     }
 	
 	UIGraphicsEndImageContext();
